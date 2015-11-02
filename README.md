@@ -15,7 +15,8 @@ Tout est ici Behel ~
 ```
 Tous les noms commençant par une majuscule **sont à remplacer** par ce qui t'arrange.
 
-###À rajouter dans un fichier js :
+###À rajouter dans un fichier js : 
+* **S'IL Y A BESOIN D'UNE CONFIRMATION**
 ``` javascript
 var form = document.getElementById("js_form");
 var id_param = document.getElementById("js_form_id");
@@ -27,6 +28,19 @@ for (var i =0; i < list.length; i++) {
       id_param.value = e.target.id;
       form.submit();
     }
+  }, false)
+}
+```
+* **S'IL N'Y A PAS BESOIN D'UNE CONFIRMATION**
+``` javascript
+var form = document.getElementById("js_form");
+var id_param = document.getElementById("js_form_id");
+var list = document.getElementsByClassName("del_button");
+  
+for (var i =0; i < list.length; i++) {
+  list[i].addEventListener('click', function (e) {
+    id_param.value = e.target.id;
+    form.submit();
   }, false)
 }
 ```
