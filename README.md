@@ -4,31 +4,31 @@ Tout est ici Behel ~
 
 ###À rajouter dans le fichier html :
 ``` html
-  <!--Pour chaque bouton de suppression-->
-  <BaliseRandom id="IdDuTrucÀSupprimer" class="del_button"></BaliseRandom>
+<!--Pour chaque bouton de suppression-->
+<BaliseRandom id="IdDuTrucÀSupprimer" class="del_button"></BaliseRandom>
   
-  <!--Une fois par fichier-->
-  <form action="PageDeTraitement" method="POST" id="js_form">
+<!--Une fois par fichier-->
+<form action="PageDeTraitement" method="POST" id="js_form">
   <input type="hidden" id="js_form_id" name="Id" value="" />
   <input type="hidden" name="Action" value="ActionÀFaire" />
-  </form>
+</form>
 ```
 Tous les noms commençant par une majuscule **sont à remplacer** par ce qui t'arrange.
 
 ###À rajouter dans un fichier js :
 ``` javascript
-  var form = document.getElementById("js_form");
-  var id_param = document.getElementById("js_form_id");
-  var list = document.getElementsByClassName("del_button");
+var form = document.getElementById("js_form");
+var id_param = document.getElementById("js_form_id");
+var list = document.getElementsByClassName("del_button");
   
-  for (var i =0; i < list.length; i++) {
-    list[i].addEventListener('click', function (e) {
-      if(confirm("Êtes-vous sûr de vouloir suprimer ce message ?")) {
-        id_param.value = e.target.id;
-        form.submit();
-      }
-    }, false)
-  }
+for (var i =0; i < list.length; i++) {
+  list[i].addEventListener('click', function (e) {
+    if(confirm("Êtes-vous sûr de vouloir suprimer ce message ?")) {
+      id_param.value = e.target.id;
+      form.submit();
+    }
+  }, false)
+}
 ```
 
 ###Pour le PHP
