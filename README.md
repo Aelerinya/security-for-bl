@@ -1,6 +1,6 @@
-# security-for-bl
+# Un peu de sécurité pour [herobrine.fr](http://herobrine.fr)
 
-Tout est ici.
+Tout est ici Behel ~
 
 ###À rajouter dans le fichier html :
 ``` html
@@ -9,11 +9,11 @@ Tout est ici.
   
   <!--Une fois par fichier-->
   <form action="PageDeTraitement" method="POST" id="js_form">
-  <input type="hidden" id="js_form_id" name="id" value="" />
+  <input type="hidden" id="js_form_id" name="Id" value="" />
   <input type="hidden" name="Action" value="ActionÀFaire" />
   </form>
 ```
-Tous les noms commençant par une majuscule sont à remplacer par ce qui t'arrange.
+Tous les noms commençant par une majuscule **sont à remplacer** par ce qui t'arrange.
 
 ###À rajouter dans un fichier js :
 ``` javascript
@@ -32,4 +32,6 @@ Tous les noms commençant par une majuscule sont à remplacer par ce qui t'arran
 ```
 
 ###Pour le PHP
-Bah les "GET" à remplacer par "POST", et les noms des champs à adapter d'un côté ou de l'autre.
+Bah les "GET" à remplacer par "POST", et les noms des champs à adapter d'un côté ou de l'autre. Je ne sais pas trop comment c'est organisé ^^'
+
+J'espère que ça te donnera la motivation de sécuriser un peu ton superbe site ;3
